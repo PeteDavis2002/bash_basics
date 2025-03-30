@@ -4,7 +4,7 @@
 while [ true ]; do
 
    # you can show a prompt with the read command
-   read -p "hockey, baseball, football, or boxing? (q to end) > " sport
+   read -p "hockey, baseball, football, soccer, or boxing? (q to end) > " sport
 
 case $sport in
    # each case matches a pattern
@@ -19,6 +19,9 @@ case $sport in
       ;;
    boxing|Boxing)
       echo "Muhammad Ali is generally seen as the greatest boxer of all time"
+      ;;
+   soccer|Soccer)
+      echo "The greatest soccer players of all time are considered to be Messi and Ronaldo"
       ;;
    q)
       echo "Those are the GOATs in their respective sports"
